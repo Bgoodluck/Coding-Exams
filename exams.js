@@ -88,17 +88,16 @@ class BankAccount {
 let likes = [10, 20, 15, 30];
 let comments = [5, 10, 8, 15];
 
-function totalEngagement(likes, comments){
-if(likes.length !== comments.length){
-  return new error ()
-}
-let totalEngagement = [];
-
-for( let i = 0; i < likes.length; i++){
-  
+function calculateTotalEngagement(likes, comments) {
+    let totalEngagement = [];
+    for (let i = 0; i < likes.length; i++) {
+        totalEngagement.push(likes[i] + comments[i]);
+    }
+    return totalEngagement;
 }
 
-}
+let totalEngagement = calculateTotalEngagement(likes, comments);
+console.log(totalEngagement);
 
 
 
