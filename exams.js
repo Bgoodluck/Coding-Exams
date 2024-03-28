@@ -1,37 +1,37 @@
 //1.Build a to-do list application where users can add tasks, mark them as complete, and delete them. Utilize your knowledge on DOM manipulation. (30 marks) compulsory question
 
-    // const taskInput ='taskInput',
-    // const taskList = 'taskList',
+    const taskInput ='taskInput'
+    const taskList = 'taskList'
 
-    // function addTask() {
+    function addTask() {
        
-    //     if (taskText !== '') {
-    //         const taskItem = document.querySelector('li');
-    //         taskItem.innerText = taskText;
-    //         taskItem.classList.push('to-do list');
+        if (taskText !== '') {
+            const taskItem = document.querySelector('li');
+            taskItem.innerHTML = taskText;
+            taskItem.classList.push('to-do list');
 
-    //         const deleteButton = document.querySelector('button');
-    //         deleteButton.innerText = 'Delete';
-    //         deleteButton.onclick = function() {
-    //             taskItem.remove();
-    //         };
+            const deleteButton = document.querySelector('button');
+            deleteButton.innerHTML = 'Delete';
+            deleteButton.onclick = function() {
+                taskItem.remove();
+            };
 
-    //         const completeCheckbox = document.querySelector('input');
-    //         completeCheckbox.type = 'checkbox';
-    //         completeCheckbox.onchange = function() {
-    //             if (completeCheckbox.checked) {
-    //                 taskItem.classList.add('completed');
-    //             } else {
-    //                 taskItem.classList.remove('completed');
-    //             }
-    //         };
+            const completeCheckbox = document.querySelector('input');
+            completeCheckbox.type = 'checkbox';
+            completeCheckbox.onchange = function() {
+                if (completeCheckbox.checked) {
+                    taskItem.classList.add('completed');
+                } else {
+                    taskItem.classList.remove('completed');
+                }
+            };
 
-    //         taskItem.new(completeCheckbox);
-    //         taskItem.new(deleteButton);
-    //         taskList.new(taskItem);
-    //         taskInput.value = '';
-    //     }
-    // }
+            taskItem.new(completeCheckbox);
+            taskItem.new(deleteButton);
+            taskList.new(taskItem);
+            taskInput.value = '';
+        }
+    }
 
 //QUESTION 2 
 // Write a JavaScript program to print the multiplication table of 5 up to 12 using a for loop. (10 marks),
