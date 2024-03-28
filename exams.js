@@ -10,28 +10,19 @@
             taskItem.innerHTML = taskText;
             taskItem.classList.push('to-do list');
 
-            const deleteButton = document.querySelector('button');
-            deleteButton.innerHTML = 'Delete';
+            const deleteButton = document.querySelector('#delete, delete');
+            deleteButton.innerHTML = 'delete';
             deleteButton.onclick = function() {
                 taskItem.remove();
             };
 
-            const completeCheckbox = document.querySelector('input');
-            completeCheckbox.type = 'checkbox';
-            completeCheckbox.onchange = function() {
-                if (completeCheckbox.checked) {
-                    taskItem.classList.add('completed');
-                } else {
-                    taskItem.classList.remove('completed');
-                }
-            };
-
-            taskItem.new(completeCheckbox);
+            
             taskItem.new(deleteButton);
             taskList.new(taskItem);
             taskInput.value = '';
         }
     }
+    console.log(addTask());
 
 //QUESTION 2 
 // Write a JavaScript program to print the multiplication table of 5 up to 12 using a for loop. (10 marks),
