@@ -161,25 +161,17 @@ const school = {
 // 9. Write a loop that prints numbers from 1 to 20, but for multiples of 3 print "Fizz", for multiples of 5 print "Buzz", and for multiples of both 3 and 5 print "FizzBuzz". (15 marks)
 
 
-//  let counter = 0;
-// let counter = 0;
-
-document.addEventListener("DOMContentLoaded", function () {
-document.querySelector("#counter").onclick = click;
-    });
-   
- function count() {
- counter++;
- document.querySelector("#counter").innerHTML = counter;
- if (counter % 3 === 0 && counter % 5 === 0) {
- alert(` ${counter} - fizzBuzz!`);
- } else if (counter % 3 === 0) {
- alert(` ${counter} - fizz!`);
- } else if (counter % 5 === 0) {
- alert(` ${counter} - Buzz!`);
- }
- }
-
+function fizzbuzz(){
+  if (result.innerHTML % 3 === 0 && result.innerHTML % 5 === 0) {
+      alert("FizzBuzz!!!")
+  } else if (result.innerHTML % 3 === 0) {
+      alert("Fizz!")
+  } else if (result.innerHTML % 5 === 0) {
+      alert("Buzz!")
+  } else if (result.innerHTML % 2 === 0) {
+      link("https://www.google.com/")
+  }
+}
 
 
 
