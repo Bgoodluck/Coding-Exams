@@ -118,6 +118,20 @@ for( let i = 0; i < likes.length; i++){
 
 // 6. Write a function that takes a numerical grade as an argument and returns the corresponding letter grade (A,B, C, D, or F) Using the IF-ELSE statement and rewrite the function using switch case . (10 marks)
 
+function numericalGrade(score){
+  if (score >= 80) {
+      return 'A'
+  } else if (score >= 70) {
+      return 'B'
+  } else if (score >= 60) {
+      return 'C'
+  } else if (score >= 50) {
+      return 'D'
+  } else{
+      return 'F'
+  }
+}
+console.log(numericalGrade(94));
 
 
 
