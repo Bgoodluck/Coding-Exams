@@ -16,7 +16,10 @@
                 taskItem.remove();
             };
 
-            
+            const 
+
+
+
             taskItem.new(deleteButton);
             taskList.new(taskItem);
             taskInput.value = '';
@@ -82,8 +85,20 @@ class BankAccount {
 
 // 4. You're analyzing engagement on social media posts. Given arrays representing likes and comments for each post, write a function to calculate the total engagement (likes + comments) for each post. Use the array below… let likes = [10, 20, 15, 30] and let comments = [5, 10, 8, 15] Your result would be a new array [15,30, 23, 45 ] (15 marks)
 
-// let likes = [10, 20, 15, 30],
-// let comments = [5, 10, 8, 15]
+let likes = [10, 20, 15, 30];
+let comments = [5, 10, 8, 15];
+
+function totalEngagement(likes, comments){
+if(likes.length !== comments.length){
+  return new error ()
+}
+let totalEngagement = [];
+
+for( let i = 0; i < likes.length; i++){
+  
+}
+
+}
 
 
 
